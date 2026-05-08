@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Campus Lost & Found Portal</h1>
+
+    <div class="container">
+        <h2>Report Lost/Found Item</h2>
+
+        <form id="itemForm">
+            <input type="text" id="title" placeholder="Item Name" required>
+
+            <input type="text" id="category" placeholder="Category">
+
+            <input type="text" id="color" placeholder="Color">
+
+            <input type="text" id="location" placeholder="Location">
+
+            <textarea id="description" placeholder="Description"></textarea>
+
+            <select id="status">
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Search Item</h2>
+        <input type="text" id="searchInput" placeholder="Search item">
+        <button onclick="searchItems()">Search</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
